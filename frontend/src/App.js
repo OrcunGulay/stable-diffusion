@@ -6,7 +6,7 @@ function App() {
   const [imageBase64, setImageBase64] = useState('');
 
   const handleGenerateImage = () => {
-    fetch(`http://localhost:8000/generate-image?prompt=${encodeURIComponent(prompt)}`)
+    fetch(`https://cc3c-159-146-26-91.ngrok-free.app/generate-image?prompt=${encodeURIComponent(prompt)}`)
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
